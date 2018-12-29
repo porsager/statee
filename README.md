@@ -1,4 +1,6 @@
-[![version](https://img.shields.io/npm/v/statee.svg)]() [![gzipped](http://img.badgesize.io/porsager/statee/master/statee.js.svg?compression=gzip&label=gzipped)]() [![license](https://img.shields.io/github/license/porsager/statee.svg)]()
+[![NPM version](https://img.shields.io/npm/v/statee.svg)](https://www.npmjs.com/package/statee)
+[![Size](https://img.shields.io/bundlephobia/minzip/statee.svg)]()
+[![license](https://img.shields.io/github/license/porsager/statee.svg)]()
 
 # 📬 `statee`
 
