@@ -1,6 +1,6 @@
 {
   "name": "statee",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Statee",
   "main": "statee.js",
   "module": "statee.esm.js",
