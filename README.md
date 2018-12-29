@@ -2,7 +2,7 @@
 
 # 📬 `statee`
 
-> Think - Radio buttons with storage on steroids.
+> Like enums where each one can contain a value
 
 Statee can help you make a quick state model with multiple grouped properties that are mutually exclusive, where each property can contain any value, and if one in the group is set, the others will return to their initial value.
 
