@@ -2,8 +2,8 @@
   "name": "statee",
   "version": "0.0.2",
   "description": "Statee",
-  "main": "statee.js",
-  "module": "statee.esm.js",
+  "main": "dist/statee.js",
+  "module": "dist/statee.esm.js",
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "rollup -c"

@@ -6,10 +6,10 @@ export default [
   {
     input: 'lib/index.js',
     output: {
-      file: 'statee.js',
+      file: 'dist/statee.js',
       exports: 'default',
       format: 'umd',
-      name: 'b',
+      name: 'Statee',
       sourcemap: true
     },
     plugins: [
@@ -19,10 +19,10 @@ export default [
   }, {
     input: 'lib/index.js',
     output: {
-      file: 'statee.min.js',
+      file: 'dist/statee.min.js',
       exports: 'default',
       format: 'umd',
-      name: 'b',
+      name: 'Statee',
       sourcemap: true
     },
     plugins: [
@@ -33,7 +33,7 @@ export default [
   }, {
     input: 'lib/index.js',
     output: {
-      file: 'statee.esm.js',
+      file: 'dist/statee.esm.js',
       format: 'esm',
       sourcemap: true
     },
