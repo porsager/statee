@@ -36,4 +36,4 @@ Setting one of the specified properties will set the rest to their initial value
 
 ### `statee('property')`
 
-The `statee` instance itself is a function that returns a getter for any value passed to it. This is very useful if supplying it as a callback for promises and the like.
+The `statee` instance itself is a function that returns a setter for any property passed to it. This is very useful if supplying it as a callback for promises and the like.
