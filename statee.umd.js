@@ -1,17 +1,10 @@
-export default function() {
+;(function(g){typeof exports==="object"&&typeof module!=="undefined"?module.exports=statee:((g?g:self).statee=statee);
 
-  function statee(key, defaultValue) {
-    if (!(key in statee))
-      throw new Error('Key ' + key + ' not defined')
-
-    return value => statee[key] = value
-  }
-
+function statee(...args) {
   const values = {}
   let observer
 
-  for (let i = 0; i < arguments.length; i++) {
-    const group = arguments[i]
+  args.forEach(group => {
     if (typeof group === 'function')
       observer = group
 
@@ -31,10 +24,19 @@ export default function() {
         })
       })
     })
-  }
+  })
 
   statee.toJSON = () => values
   return typeof Object.seal === 'function'
     ? Object.seal(statee)
     : statee
+
+  function statee(key) {
+    if (!(key in statee))
+      throw new Error('Key ' + key + ' not defined')
+
+    return value => statee[key] = value
+  }
+
 }
+})(this);

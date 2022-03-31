@@ -2,19 +2,27 @@
   "name": "statee",
   "version": "1.0.3",
   "description": "Statee",
-  "main": "dist/statee.js",
-  "module": "dist/statee.esm.js",
+  "type": "module",
+  "module": "statee.js",
+  "browser": "statee.umd.js",
+  "main": "statee.umd.js",
+  "exports": {
+    "import": "./statee.js",
+    "default": "./statee.umd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/porsager/statee.git"
+  },
   "scripts": {
+    "test": "echo please PR",
     "prepublishOnly": "npm run build",
-    "build": "rollup -c"
+    "build": "node -e 'fs.writeFileSync(\"statee.umd.js\",\";(function(g){\"+fs.readFileSync(\"statee.js\",\"utf8\").replace(\"export default statee\",`typeof exports===\"object\"&&typeof module\\!==\"undefined\"?module.exports=statee:((g?g:self).statee=statee);`) + \"})(this);\")'"
   },
   "author": "Rasmus Porsager <rasmus@porsager.com>",
-  "repository": "porsager/statee",
   "license": "WTFPL",
-  "devDependencies": {
-    "rollup": "1.27.14",
-    "rollup-plugin-buble": "0.19.8",
-    "rollup-plugin-filesize": "6.2.1",
-    "rollup-plugin-terser": "5.1.3"
-  }
+  "bugs": {
+    "url": "https://github.com/porsager/statee/issues"
+  },
+  "homepage": "https://github.com/porsager/statee#readme"
 }
